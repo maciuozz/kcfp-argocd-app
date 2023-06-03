@@ -4,10 +4,10 @@
 
 replicaCount: 1
 image:
-  repository: maciuozz/kcfp-argocd-app
+  repository: maciuozz/kc7fp-cicd-argocd
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 1.0.1
+  tag: 1.0.2
 
 imagePullSecrets:
   - name: registry-credential
