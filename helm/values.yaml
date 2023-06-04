@@ -88,4 +88,4 @@ mongodb:
     enabled: true
     serviceMonitor:
       enabled: true
-      namespace: "monitoring"
+      namespace: "fast-api"
