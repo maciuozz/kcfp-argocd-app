@@ -138,7 +138,7 @@ additionalPrometheusRulesMap:
               summary: MongoDB Down (instance {{ $labels.instance }})
               description: "MongoDB instance is down"
           - alert: simpleServerCPUUsageHigh
-            expr: sum(rate(container_cpu_usage_seconds_total{namespace="monitoring", container="simple-server"}[1m])) by (pod) > sum by(pod) (kube_pod_container_resource_requests{namespace="monitoring", resource="cpu", container="simple-server"})
+            expr: sum(rate(container_cpu_usage_seconds_total{namespace="fast-api", container="fast-api-webapp"}[1m])) by (pod) > sum by(pod) (kube_pod_container_resource_requests{namespace="fast-api", resource="cpu", container="fast-api-webapp"})
             for: 0m
             labels:
               severity: critical
