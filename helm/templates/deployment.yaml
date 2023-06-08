@@ -50,10 +50,6 @@ spec:
               containerPort: {{ .Values.metrics.svc.port }}
               protocol: TCP
             {{- end }}
-          resources: 
-            requests: 
-              cpu: 200m
-              memory: 256Mi
           livenessProbe:
             httpGet:
               path: /health
