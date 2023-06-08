@@ -77,7 +77,7 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 100
   targetCPUUtilizationPercentage: 60
-  targetMemoryUtilizationPercentage: 30
+  targetMemoryUtilizationPercentage: 60
 
 config:
   mongoService: mongodb
