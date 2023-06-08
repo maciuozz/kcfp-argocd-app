@@ -65,9 +65,9 @@ ingress:
 
 # -- Resources configuration for the deployment
 resources:
-  #limits:
-    #cpu: 200m
-    #memory: 256Mi
+  limits:
+    cpu: 200m
+    memory: 256Mi
   requests:
     cpu: 100m
     memory: 128Mi
