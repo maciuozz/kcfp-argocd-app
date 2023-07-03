@@ -4,5 +4,5 @@ helm:
     value: maciuozz/kc7fp-cicd-argocd
     forcestring: true
   - name: image.tag
-    value: 1.0.30
+    value: 1.0.31
     forcestring: true
